@@ -22,28 +22,30 @@
                 <h2>Where do you want to go?</h2>
             </div>
         </section>-->
-        <div class="wrapper">
-            <section class="index-links">
-                <a href="search.php" style="text-decoration: none">
-                    <div class="index-button">
-                        <img class="img-icon" src="icons/doc-search.png" alt="Search for a document...">
-                        <h1>Document Search</h1>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="index-button">
-                        <img class="img-icon" src="icons/request-cert.png" alt="Request a certification...">
-                        <h1>Request Certification</h1>
-                    </div>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <div class="index-button">
-                        <img class="img-icon" src="icons/submit-a-doc.png" alt="Submit a document...">
-                        <h1>Submit Document</h1>
-                    </div>
-                </a>
-            </section>
-        </div>
+        <section class="index-banner">
+            <h1>HEADER STUFF HERE</h1>
+            <p>Some discription below the header to further explain the system...</p>
+        </section>
+        <section class="index-links">
+            <a href="search.php" style="text-decoration: none">
+                <div class="index-button">
+                    <img class="img-icon" src="icons/doc-search.png" alt="Search for a document...">
+                    <h1>Document Search</h1>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none">
+                <div class="index-button">
+                    <img class="img-icon" src="icons/request-cert.png" alt="Request a certification...">
+                    <h1>Request Certification</h1>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none">
+                <div class="index-button">
+                    <img class="img-icon" src="icons/submit-a-doc.png" alt="Submit a document...">
+                    <h1>CGD eServices</h1>
+                </div>
+            </a>
+        </section>
     </main>
     <footer>
         <p>Copyrights chuchu and stuffs</p>
