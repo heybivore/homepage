@@ -116,15 +116,17 @@ header {
     width: 100%;
     height: 70px;
     position: fixed;
+    /*border-bottom:groove;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header .header-name {
     font-family: 'Righteous', cursive;
     font-size: 24px;
     font-weight: 600;
-    color: #111;
+    color: #278b5c;
+    margin: 0 10px;
     display: block;
-    margin: 0 auto;
     text-align: center;
     padding: 10px 0;
 }
@@ -143,7 +145,7 @@ header nav ul li {
 
 .border-right {
     border-right: solid;
-    border-color: green;
+    border-color: #278b5c;
 }
 
 header nav ul li a{
@@ -220,7 +222,7 @@ header nav ul li a{
     font-size: 24px;
     font-weight: 800;
     line-height: 100px;
-    color: #111;
+    color: #278b5c;
     text-align: center;
 }
 
@@ -228,7 +230,7 @@ footer {
     width: calc(100%-80px);
     padding: 70px 40px;
     margin-top: 16px;
-    background-color: #111;
+    background-color: #278b5c;
 }
 
 footer ul {
@@ -246,4 +248,5 @@ footer ul li a {
     font-family: 'Catamaran';
     font-size: 15 px;
     color: #fff;
+    padding-left: 10px;
 }

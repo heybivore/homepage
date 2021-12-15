@@ -20,6 +20,7 @@
 </head>
 <body>
     <header>
+        <img src="" alt="">
         <a href="home.php" class="header-name">CGDeS Portal</a>
         <nav>
             <ul>
@@ -55,7 +56,6 @@
         </section>
 
 
-
         <!--<section class="index-text">
             <div class="vert-center">
                 <h2>Where do you want to go?</h2>
@@ -89,9 +89,9 @@
     </main>-->
     <footer>
         <ul>
-            <li><a href="https://www.davaocity.gov.ph/"><i class="fas fa-globe"></i>davaocity.gov.ph</a></li>
-            <li><a href="https://www.facebook.com/davaocitygov"><i class="fab fa-facebook"></i>facebook.com/davaocitygov</a></li>
-            <li><a href="https://twitter.com/davaocitygov"><i class="fab fa-twitter"></i>twitter.com/davaocitygov</a></li>
+            <li><i class="fas fa-globe"></i><a href="https://www.davaocity.gov.ph/">davaocity.gov.ph</a></li>
+            <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/davaocitygov">facebook.com/davaocitygov</a></li>
+            <li><i class="fab fa-twitter"></i><a href="https://twitter.com/davaocitygov">twitter.com/davaocitygov</a></li>
         </ul>
     </footer>
 </body>
