@@ -114,7 +114,7 @@ input, select {
 header {
     background-color: #fff;
     width: 100%;
-    height: 70px;
+    height: 80px;
     position: fixed;
     /*border-bottom:groove;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -125,6 +125,7 @@ header .header-name {
     font-size: 24px;
     font-weight: 600;
     color: #278b5c;
+    padding-bottom: 5px;
     display: block;
     text-align: center;
 }
@@ -144,6 +145,7 @@ header nav ul li {
 .border-right {
     border-right: solid;
     border-color: #278b5c;
+    padding-right: 15px;
 }
 
 header nav ul li a{
@@ -154,7 +156,7 @@ header nav ul li a{
 }
 
 .index-banner {
-    padding-top: 70px;
+    padding-top: 80px;
     width: 100%;
     height: 40vh;
     display: table;
