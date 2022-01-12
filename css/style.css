@@ -111,7 +111,7 @@ input, select {
     color: #fff;
 }
 
-header {
+nav {
     background-color: #fff;
     width: 100%;
     height: 80px;
@@ -120,7 +120,7 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-header .header-name {
+.header-name {
     font-family: 'Righteous', cursive;
     font-size: 24px;
     font-weight: 600;
@@ -130,13 +130,13 @@ header .header-name {
     text-align: center;
 }
 
-header nav ul {
+nav ul {
     display: block;
     margin: 0 auto;
     width: fit-content;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     list-style: none;
     padding: 0 10px;
@@ -148,7 +148,7 @@ header nav ul li {
     padding-right: 15px;
 }
 
-header nav ul li a{
+nav ul li a{
     font-family: 'Catamaran';
     font-size: 16px;
     font-weight: 500;

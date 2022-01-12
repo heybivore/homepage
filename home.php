@@ -20,9 +20,9 @@
 </head>
 <body>
     <header>
+        <nav>
         <img src="" alt="">
         <a href="home.php" class="header-name">CGDeS Portal</a>
-        <nav>
             <ul>
                 <li class="border-right"><a href="#">optional</a></li>
                 <li class="border-right"><a href="#">menu</a></li>
