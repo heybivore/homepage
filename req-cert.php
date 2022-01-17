@@ -14,7 +14,7 @@
 </head>
 <body class="bg-light">
     <header>
-        <nav class="bg-white container-fluid py-1 text-center position-fixed border-bottom shadow">
+        <nav class="bg-white container-fluid py-1 text-center border-bottom shadow">
             <img class="me-1 d-inline" src="img/city-gov-davao-logo-2.jpg" alt="City Government of Davao Logo"  width="24px">
             <a href="home.php" class="align-middle d-inline h-name">CGDeS Portal</a>
             <ul class="p-0 mb-0">
@@ -25,8 +25,44 @@
         </nav>
     </header>
 
-    <div class="container-xl">
-
+    <div class="container-sm mt-4 p-0">
+        <h1 class="lead fs-6">Kindly fill the form below.</h1>
+    </div>
+    <div class="bg-white border-light p-4 border-3 rounded-3 shadow container">
+        <h2 class="text-center">Request Certification Form</h2>
+        <form nonvalidate>
+            <label for="certification" class="form-label mb-1">Certification</label>
+            <select name="certification" id="certification" class="form-control mb-2">
+                <option value="">Choose...</option>
+                <option value="">cert 1</option>
+                <option value="">cert 2</option>
+            </select>
+            <label for="office" class="form-label mb-1">Department/Office from</label>
+            <select name="office" id="office" class="form-control mb-2">
+                <option value="">Office...</option>
+                <option value="">office 1</option>
+                <option value="">office 2</option>
+            </select>
+            <hr class="my-4">
+            <div class="row g-2">
+                <div class="col">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="Ricardo">
+                </div>
+                <div class="col">
+                    <label for="middleName" class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" placeholder="Bagsik">
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Dalisay">
+                </div>
+                <div class="col-1">
+                    <label for="extName" class="form-label">Ext.</label>
+                    <input type="text" class="form-control" placeholder="Jr., III">
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
