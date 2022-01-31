@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1acd2c2806.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -29,7 +29,7 @@
     <div class="container-sm mt-4 p-0">
         <h1 class="lead fs-6">Kindly fill the form below.</h1>
     </div>
-    <div class="bg-white border-light p-4 border-3 rounded-3 shadow container">
+    <div class="bg-white border-light p-4 mb-4 border-3 rounded-3 shadow container">
         <h2 class="text-center">Request Certification Form</h2>
         <form nonvalidate>
             <label for="certification" class="form-label mb-1">Certification</label>
@@ -66,9 +66,24 @@
                 <option value="CEO-3">Miscellaneous Sales Application</option>
                 <option value="CEO-4">Road Right of Way Certification</option>
                 <option value="CEO-5">Certified Copies of Documents - City Engineer's Office</option>
-                <option value="CEO-6"> Quarry Certification</option>
+                <option value="CEO-6">Quarry Certification</option>
                 <option value="CHLURU-1">Certificate of Completion - City Housing and Land Use Regulatory Unit</option>
                 <option value="CPDC-1">Zoning Certification</option>
+                <option value="CDPC-2">Certificate of Completion of Subdivision</option>
+                <option value="CPDC-3">Certification for Water Connection Permit and Electrical Permit</option>
+                <option value="CSWDO-1">Cerficate of Eligibility</option>
+                <option value="CSWDO-2">Certificate of Indigency</option>
+                <option value="CTO-1">Certificatoin - Payment for Real Property Transfer Tax</option>
+                <option value="CTO-2">Real Property Tax (RPT)</option>
+                <option value="CTO-3">Payment for Community Tax Certificate/Cedula</option>
+                <option value="CTO-4">Certification/Clearances</option>
+                <option value="CVO-1">Fish Inspection Certificate</option>
+                <option value="CVO-2">Meat Inspection Certificate</option>
+                <option value="CVO-3">Veterinary Health Certificate (VHC) and Animal Inspection Certificate (AIC)</option>
+                <option value="HRMO-1">Certification for Job Orders and Contract of Services</option>
+                <option value="HRMO-2">Certificate of Employment</option>
+                <option value="SP-1">Certified True Copies of Approved Resolutions and Ordinances</option>
+                <option value="CSDO-1">Certification - City Sports Development Office</option>
             </select>
             <label for="office" class="form-label mb-1">Department/Office from</label>
             <select name="office" id="office" class="form-control mb-2">
@@ -90,14 +105,20 @@
                 <option value="CEO">City Engineer's Office</option>
                 <option value="CHLURU">City Housing and Land Use Regulatory Unit</option>
                 <option value="CPDC">Office of the City Planning and Development Coordinator</option>
+                <option value="CSWDO">City Social Welfare and Development Office</option>
+                <option value="CTO">Office of the City Treasurer</option>
+                <option value="CVO">Office of the City Veterinarian</option>
+                <option value="HRMO">Human Resources Management Office</option>
+                <option value="SP">Sangguniang Panlungsod</option>
+                <option value="CSDO">City Sports Development Office</option>
             </select>
 
-            <div class="collapse" id="req-label">
-                <p class="lead fs-6">Requirements:</p>
+            <div class="my-3" id="req-label">
+                <h2 class="fs-5">Requirements:</h2>
             </div>
 
             <!-- City Disaster Risk Reduction and Management Office -->
-            <div class="collapse" id="CDRRMO-1">
+            <div class="collapse office" id="CDRRMO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CDRRMO-1"></dd>
                     <dt class="col-sm-7">3-year BDRRM Plan</dt>
@@ -125,7 +146,7 @@
             </div>
 
             <!-- City Agriculturist Office -->
-            <div class="collapse" id="CAGO-1">
+            <div class="collapse office" id="CAGO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CAGO-1"></dd>
                     <dt class="col-sm-7">Duly Registration Accomplished Form</dt>
@@ -157,7 +178,7 @@
             </div>
 
             <!-- Davao City Central 911 Emergency Response Center -->
-            <div class="collapse" id="Central911-1">
+            <div class="collapse office" id="Central911-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-Central911-1"></dd>
                     <dt class="col-sm-7">Duly Accomplished Request Form/Record</dt>
@@ -183,7 +204,7 @@
             </div>
 
             <!-- Office of the City Legal Officer -->
-            <div class="collapse" id="CLO-1">
+            <div class="collapse office" id="CLO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-Central911-1"></dd>
                     <dt class="col-sm-7">Duly Accomplished Request Form/Record</dt>
@@ -209,7 +230,7 @@
             </div>
 
             <!-- City Environment and Natural Resources Office -->
-            <div class="collapse" id="CENRO-1">
+            <div class="collapse office" id="CENRO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CENRO-1"></dd>
                     <dt class="col-sm-7">Accomplished Business Permit</dt>
@@ -220,7 +241,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CENRO-2">
+            <div class="collapse office" id="CENRO-2">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CENRO-2"></dd>
                     <dt class="col-sm-7">Accomplished Business Permit Application</dt>
@@ -231,21 +252,21 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CENRO-3">
+            <div class="collapse office" id="CENRO-3">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CENRO-3"></dd>
                     <dt class="col-sm-7">Previous Solid Waste Management Certificate</dt>
                 </dl>
             </div>
 
-            <div class="collapse" id="CENRO-4">
+            <div class="collapse office" id="CENRO-4">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CENRO-3"></dd>
                     <dt class="col-sm-7">Previous Solid Waste Management Certificate</dt>
                 </dl>
             </div>
 
-            <div class="collapse" id="CENRO-5">
+            <div class="collapse office" id="CENRO-5">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CENRO-5"></dd>
                     <dt class="col-sm-7">Letter request for PALC Application address to the Head of CENRO</dt>
@@ -257,7 +278,7 @@
             </div>
 
             <!-- Davao City Treatment and Rehabilitation Center for Drug Dependents -->
-            <div class="collapse" id="DCTRCDD-1">
+            <div class="collapse office" id="DCTRCDD-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-DCTRCDD-1"></dd>
                     <dt class="col-sm-7">Court Release Order for those who already completed the rehabilitation program</dt>
@@ -265,7 +286,7 @@
             </div>
 
             <!-- City Mayor's Office - Correspondence and Records Division -->
-            <div class="collapse" id="CMO-CRD-1">
+            <div class="collapse office" id="CMO-CRD-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CMO-CRD-1"></dd>
                     <dt class="col-sm-7">Request Slip</dt>
@@ -276,7 +297,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CMO-CRD-2">
+            <div class="collapse office" id="CMO-CRD-2">
                 <p class="lead fs-6 mt-3">For:</p>
                 <div class="form-check">
                     <input type="radio" class="form-check-input" name="rad-CMO-CRD-2" id="rad-1-CMO-CRD-2">
@@ -326,7 +347,7 @@
             </div>
 
             <!-- Vices Regulation Unit -->
-            <div class="collapse" id="VRU-1">
+            <div class="collapse office" id="VRU-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-VRU-1"></dd>
                     <dt class="col-sm-7">Application Form</dt>
@@ -334,14 +355,14 @@
             </div>
 
             <!-- City Health Office -->
-            <div class="collapse" id="CHO-1">
+            <div class="collapse office" id="CHO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CHO-1"></dd>
                     <dt class="col-sm-7">Official Receipt of Dental Extraction Fee</dt>
                 </dl>
             </div>
 
-            <div class="collapse" id="CHO-2">
+            <div class="collapse office" id="CHO-2">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CHO-2"></dd>
                     <dt class="col-sm-7">Application Form</dt>
@@ -360,7 +381,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CHO-3">
+            <div class="collapse office" id="CHO-3">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CHO-3"></dd>
                     <dt class="col-sm-7">Death Certificate</dt>
@@ -375,7 +396,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CHO-4">
+            <div class="collapse office" id="CHO-4">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CHO-4"></dd>
                     <dt class="col-sm-7">Duly filled-out Death Certificate Form</dt>
@@ -390,7 +411,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CHO-5"> <!-- same fields for CHO-6 -->
+            <div class="collapse office" id="CHO-5"> <!-- same fields for CHO-6 -->
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CHO-3"></dd>
                     <dt class="col-sm-7">Order of Payment</dt>
@@ -401,7 +422,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CHO-7">
+            <div class="collapse office" id="CHO-7">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CHO-7"></dd>
                     <dt class="col-sm-7">Birth Certificate</dt>
@@ -417,7 +438,7 @@
             </div>
 
             <!-- City Mayor's Office - Business Bureau -->
-            <div class="collapse" id="CMO-BB-1">
+            <div class="collapse office" id="CMO-BB-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CMO-BB-1"></dd>
                     <dt class="col-sm-7">Letter Request stating the purpose of the request</dt>
@@ -441,7 +462,7 @@
             </div>
 
             <!-- Office of the Assistant City Administrator (Operations) -->
-            <div class="collapse" id="CADO-OP-1">
+            <div class="collapse office" id="CADO-OP-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CADO-OP-1"></dd>
                     <dt class="col-sm-7">Payment Order Slip</dt>
@@ -461,7 +482,7 @@
             </div>
 
             <!-- Office of the City Accountant -->
-            <div class="collapse" id="CAO-1">
+            <div class="collapse office" id="CAO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CAO-1" required></dd>
                     <dt class="col-sm-7">Filled-up Request Slip</dt>
@@ -477,7 +498,7 @@
             </div>
 
             <!-- City Assessor's Office -->
-            <div class="collapse" id="CASSO-1"> <!-- same fields for CASSO-2 -->
+            <div class="collapse office" id="CASSO-1"> <!-- same fields for CASSO-2 -->
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CASSO-1" required></dd>
                     <dt class="col-sm-7">Filled-up request form</dt>
@@ -500,12 +521,12 @@
                 </dl>
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-6-CASSO-1"></dd>
-                    <dt class="col-sm-7">If corporation,Secretary's Certificate with photocopy of signatories and authorized representatives</dt>
+                    <dt class="col-sm-7">If corporation, Secretary's Certificate with photocopy of signatories and authorized representatives</dt>
                 </dl>
             </div>
 
             <!-- City Economic Enterprise -->
-            <div class="collapse" id="CEE-1">
+            <div class="collapse office" id="CEE-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEE-1" required></dd>
                     <dt class="col-sm-7">Scanned copy of Vaccine Card</dt>
@@ -513,7 +534,7 @@
             </div>
 
             <!-- City Engineer's Office -->
-            <div class="collapse" id="CEO-1">
+            <div class="collapse office" id="CEO-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEO-1"></dd>
                     <dt class="col-sm-7">Request Letter from the Brgy. Captain with Date of Receipt by the Contractor</dt>
@@ -544,7 +565,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CEO-2">
+            <div class="collapse office" id="CEO-2">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEO-2"></dd>
                     <dt class="col-sm-7">Application Letter with contract number duly signed by the applicant or his/her representative</dt>
@@ -567,7 +588,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CEO-3">
+            <div class="collapse office" id="CEO-3">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEO-3"></dd>
                     <dt class="col-sm-7">Indorsement from Bureau of Lands</dt>
@@ -610,7 +631,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CEO-4">
+            <div class="collapse office" id="CEO-4">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEO-4"></dd>
                     <dt class="col-sm-7">Letter Request with complete address and contact number of the requesting party</dt>
@@ -629,7 +650,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CEO-5">
+            <div class="collapse office" id="CEO-5">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEO-5"></dd>
                     <dt class="col-sm-7">Letter Request</dt>
@@ -640,7 +661,7 @@
                 </dl>
             </div>
 
-            <div class="collapse" id="CEO-6">
+            <div class="collapse office" id="CEO-6">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CEO-6"></dd>
                     <dt class="col-sm-7">Letter of Intent</dt>
@@ -668,7 +689,7 @@
             </div>
 
             <!-- City Housing and Land Use Regulatory Unit -->
-            <div class="collapse" id="CHLURU-1">
+            <div class="collapse office" id="CHLURU-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CHLURU-1"></dd>
                     <dt class="col-sm-7">Application Form</dt>
@@ -716,7 +737,7 @@
             </div>
 
             <!-- Office of the City Planning and Development Coordinator -->
-            <div class="collapse" id="CPDC-1">
+            <div class="collapse office" id="CPDC-1">
                 <dl class="row">
                     <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CPDC-1"></dd>
                     <dt class="col-sm-7">Application Form</dt>
@@ -735,11 +756,259 @@
                 </dl>
             </div>
 
+            <div class="collapse office" id="CPDC-2">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CPDC-2"></dd>
+                    <dt class="col-sm-7">Joint Inspection Invitation</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CPDC-2"></dd>
+                    <dt class="col-sm-7">Document for COC</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-3-CPDC-2" multiple></dd>
+                    <dt class="col-sm-7">Certified True Copy of Title/s (Contract of Lease / Deed of Sale / any proof of Ownership)</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-4-CPDC-2"></dd>
+                    <dt class="col-sm-7">Current Tax Receipts</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-5-CPDC-2"></dd>
+                    <dt class="col-sm-7">One (1) Set of Approved Subdivision Plan</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-6-CPDC-2"></dd>
+                    <dt class="col-sm-7">Order of Payment</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-7-CPDC-2"></dd>
+                    <dt class="col-sm-7">Official Receipt</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-8-CPDC-2"></dd>
+                    <dt class="col-sm-7">Pictures of Completion</dt>
+                </dl>
+            </div>
+
+            <div class="collapse office" id="CPDC-3">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CPDC-3"></dd>
+                    <dt class="col-sm-7">Barangay Certification</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CPDC-3"></dd>
+                    <dt class="col-sm-7">Order Payment</dt>
+                </dl>
+            </div>
+
+            <!-- City Social Welfare and Development -->
+            <div class="collapse office" id="CSWDO-1">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CSWDO-1" required></dd>
+                    <dt class="col-sm-7">Barangay Certification</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CSWDO-1" required></dd>
+                    <dt class="col-sm-7">Certificate of Indigency</dt>
+                </dl>
+            </div>
+
+            <div class="collapse office" id="CSWDO-2">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CSWDO-1" required></dd>
+                    <dt class="col-sm-7">Barangay Certification</dt>
+                </dl>
+            </div>
+
+            <!-- Office of the City Treasurer -->
+            <div class="collapse office" id="CTO-1">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CTO-1" required></dd>
+                    <dt class="col-sm-7">Notarized Deed of Transfer</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CTO-1" required></dd>
+                    <dt class="col-sm-7">Declaration of Real Property Tax Valuation (DRPV)</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-3-CTO-1" required></dd>
+                    <dt class="col-sm-7">Commutinity Tax Certificate (CTC)</dt>
+                </dl>
+            </div>
+
+            <div class="collapse office" id="CTO-2">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CTO-1" required></dd>
+                    <dt class="col-sm-7">Declaration of Real Property Tax Valuation (DRPV)</dt>
+                </dl>
+            </div>
+
+            <div class="collapse office" id="CTO-3">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CTO-3" required></dd>
+                    <dt class="col-sm-7">W-2/FORM2316 (Business/Employed)</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CTO-3" required></dd>
+                    <dt class="col-sm-7">Accomplished Statement Form of Community Tax Certificate</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-3-CTO-3" required></dd>
+                    <dt class="col-sm-7">Tax Declaration (Unemployed/No Business)</dt>
+                </dl>
+            </div>
+
+            <!-- Office of the City Veterinarian -->
+            <div class="collapse office" id="CVO-1">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CVO-1" required></dd>
+                    <dt class="col-sm-7">Local Tax Permit from point of origin</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CVO-1" required></dd>
+                    <dt class="col-sm-7">Auxiliaxy Permit from point of origin</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-3-CVO-1" required></dd>
+                    <dt class="col-sm-7">Payemnt Slip</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-4-CVO-1" required></dd>
+                    <dt class="col-sm-7">Official Receipt</dt>
+                </dl>
+            </div>
+
+            <div class="collapse office" id="CVO-2">
+                <p class="lead fs-6 mt-3">For:</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="rad-CVO-2" id="rad-1-CVO-2">
+                    <label for="rad-1-CVO-2" class="form-check-label">LARGE CATTLE</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="rad-CVO-2" id="rad-2-CVO-2">
+                    <label for="rad-2-CVO-2" class="form-check-label">HOG, GOAT, POULTRY</label>
+                </div>
+                <div class="collapse" id="opt-rad-1-CVO-2">
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-1-CVO-2" required></dd>
+                        <dt class="col-sm-7">Certificate of Ownership</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-2-CVO-2" required></dd>
+                        <dt class="col-sm-7">Certificate of Transfer</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-3-CVO-2"></dd>
+                        <dt class="col-sm-7">Shipping Permit if the source of animal is from other provinces</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-4-CVO-2" required></dd>
+                        <dt class="col-sm-7">Veterinary Health Certificate for Animal Inspection Certificate</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-5-CVO-2" required></dd>
+                        <dt class="col-sm-7">Barangay Clearance</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-6-CVO-2" required></dd>
+                        <dt class="col-sm-7">Official Receipt</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-7-CVO-2" required></dd>
+                        <dt class="col-sm-7">Entry Slip</dt>
+                    </dl>
+                </div>
+                <div class="collapse" id="opt-rad-2-CVO-2">
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-4-CVO-2" required></dd>
+                        <dt class="col-sm-7">Veterinary Health Certificate for Animal Inspection Certificate</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-3-CVO-2"></dd>
+                        <dt class="col-sm-7">Shipping Permit if the source of animal is from other provinces</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-2-req-3-CVO-2"></dd>
+                        <dt class="col-sm-7">Shipping Permit if the source of animal is from other provinces</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-6-CVO-2" required></dd>
+                        <dt class="col-sm-7">Official Receipt</dt>
+                    </dl>
+                    <dl class="row">
+                        <dd class="col-sm-5"><input class="form-control" type="file" id="rad-1-req-7-CVO-2" required></dd>
+                        <dt class="col-sm-7">Entry Slip</dt>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="collapse office" id="CVO-3">
+                <p class="lead fs-6 mt-3">*Animals must be apparently healthy and be submitted for inspection.</p>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CVO-3" required></dd>
+                    <dt class="col-sm-7">Barangay Certification of the animal</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-CVO-3" required></dd>
+                    <dt class="col-sm-7">Certification of Ownership</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-3-CVO-3" required></dd>
+                    <dt class="col-sm-7">Certificate of Transfer</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-4-CVO-3" required></dd>
+                    <dt class="col-sm-7">Identification card/Community Tax Certificate of the client</dt>
+                </dl>
+            </div>
+
+            <!-- Human Resources Management Office -->
+            <div class="collapse office" id="HRMO-1">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-HRMO-1" required></dd>
+                    <dt class="col-sm-7">Request Form</dt>
+                </dl>
+            </div>
+
+            <div class="collapse office" id="HRMO-2">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-HRMO-1" required></dd>
+                    <dt class="col-sm-7">Request Form</dt>
+                </dl>
+            </div>
+
+            <!-- City Sports Development Office -->
+            <div class="collapse office" id="CSDO-1">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-CSDO-1" required></dd>
+                    <dt class="col-sm-7">Request Letter</dt>
+                </dl>
+            </div>
+
+            <!-- Sangguniang Panlungsod -->
+            <div class="collapse office" id="SP-1">
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-1-SP-1" required></dd>
+                    <dt class="col-sm-7">Letter Request or Agency Request Form</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-2-SP-1" required></dd>
+                    <dt class="col-sm-7">Oder of Payment</dt>
+                </dl>
+                <dl class="row">
+                    <dd class="col-sm-5"><input class="form-control" type="file" id="req-3-SP-1" required></dd>
+                    <dt class="col-sm-7">Official Receipt</dt>
+                </dl>
+            </div>
+
+
             <hr class="my-4">
-            <div class="row g-2">
+            <h2 class="fs-5">Personal Information</h2>
+            <div class="row g-2 my-3">
                 <div class="col">
                     <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" placeholder="Ricardo">
+                    <input type="text" class="form-control" placeholder="Ricardo" required>
                 </div>
                 <div class="col">
                     <label for="middleName" class="form-label">Middle Name</label>
@@ -747,18 +1016,27 @@
                 </div>
                 <div class="col">
                     <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Dalisay">
+                    <input type="text" class="form-control" placeholder="Dalisay" required>
                 </div>
                 <div class="col-1">
                     <label for="extName" class="form-label">Ext.</label>
                     <input type="text" class="form-control" placeholder="Jr., III">
                 </div>
             </div>
+            <div class="row g-3">
+                <div class="col">
+                    <label for="middleName" class="form-label">Contact Number</label>
+                    <input type="number" class="form-control" placeholder="09">
+                </div>
+                <div class="col">
+                    <label for="middleName" class="form-label">Email Address</label>
+                    <input type="text" class="form-control" placeholder="example@email.com">
+                </div>
+            </div>
         </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     <script src="js/script.js"></script>
 
 </body>
